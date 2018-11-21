@@ -30,14 +30,7 @@ def printresult(L):
         
 def secretsanta():
     io = input("Type your friends' names, separated by 1 space (Don't forget your name)\n")
-    name = ""
-    L = []
-    for c in io:
-        if c == ' ':
-            L.append(name)
-            name = ""
-        else:
-            name += c
+    L = io.split(" ")
     init(L)
     randomizelist(L)
     givereceive(L)
