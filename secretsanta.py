@@ -43,4 +43,5 @@ def secretsanta():
     givereceive(L)
     print("\n")
     printresult(L)
-    
+
+secretsanta()
